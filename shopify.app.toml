@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "qr-code"
+client_id = "62d48cf1259e49f67bdb1f3f20a9727c"
+application_url = "https://directions-fatty-seating-hardwood.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://directions-fatty-seating-hardwood.trycloudflare.com/auth/callback",
+  "https://directions-fatty-seating-hardwood.trycloudflare.com/auth/shopify/callback",
+  "https://directions-fatty-seating-hardwood.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "gwl-apps-demo.myshopify.com"
